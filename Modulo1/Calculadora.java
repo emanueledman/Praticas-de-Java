@@ -18,7 +18,17 @@ public class Calculadora {
                     int n2 = input.nextInt();
                     System.out.println("A soma é: " + (n1 + n2));
                     break;
-            
+                case 2:
+                    System.out.println("Informe o valor da base");
+                    int bas = 1; 
+                    int base = input.nextInt();
+                    System.out.println("Informe o valor da potencia");
+                    int pot = input.nextInt();
+                    while (pot > 0) {
+                        bas *= base;
+                        pot--;
+                    }
+                    System.out.println("A potencia e : " + bas);
                 default:
                     break;
             }
