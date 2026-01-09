@@ -8,6 +8,7 @@ public class Calculadora {
 
         int n;
         do {
+            
             n = input.nextInt();
             switch (n) {
                 case 1:
@@ -29,6 +30,13 @@ public class Calculadora {
                         pot--;
                     }
                     System.out.println("A potencia e : " + bas);
+                case 3:
+                    System.out.println("informe o numero");
+                    int p = input.nextInt();
+                    while(n != 0)
+                    {
+                        n /= 10;
+                    }
                 default:
                     break;
             }
